@@ -73,10 +73,10 @@ public class ListaPiezas {
         	return false;
         }else{            
         	// Si es así, reasigno el resto de elementos desde la posición dada
-			for(int i=pos; i < (this.contador - 1); i++) {
+	    for(int i=pos; i < (this.contador - 1); i++) {
                 this.piezas[i] = this.piezas[i+1];
-			}
-			// Y decremento el contador
+	    }
+	    // Y decremento el contador
             this.contador--;
             return true;
         }
