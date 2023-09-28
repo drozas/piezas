@@ -11,7 +11,7 @@ public class ListaPiezas {
     
 	// Número máximo de Piezas
 	private final static int MAX = 100;
-	// Array de Piezar
+	// Array de Piezas
     private Pieza[] piezas;
     // Contador de piezas en array (coincidirá con la primera posición libre del array)
     private int contador = 0;
