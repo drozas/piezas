@@ -110,13 +110,13 @@ public class ListaPiezas {
     }
 
 	public static void main(String[] args) {
-		//Creo tres piezas, mi lista, las añado y las imprimo
-		Pieza p1 = new Pieza("Broca dim 6mm", 21);
-		Pieza p2 = new Pieza("Bateria", 165);
-		Pieza p3 = new Pieza("Correa ventilador", 63.98);
-		ListaPiezas miLista = new ListaPiezas();
-		miLista.insertar(p1);
-		miLista.insertar(p2);
+	    //Creo tres piezas, mi lista, las añado y las imprimo
+	    Pieza p1 = new Pieza("Broca dim 6mm", 21);
+	    Pieza p2 = new Pieza("Bateria", 165);
+	    Pieza p3 = new Pieza("Correa ventilador", 63.98);
+	    ListaPiezas miLista = new ListaPiezas();
+	    miLista.insertar(p1);
+	    miLista.insertar(p2);
 	    
 	    //Puedo probar haciendo la lista más pequeña para ver si llena funciona
 	    if (miLista.insertar(p3) == false) {
