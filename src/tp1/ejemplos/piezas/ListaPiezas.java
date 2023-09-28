@@ -9,9 +9,9 @@ package tp1.ejemplos.piezas;
  */
 public class ListaPiezas {
     
-	// Número máximo de Piezas
-	private final static int MAX = 100;
-	// Array de Piezas
+    // Número máximo de Piezas
+    private final static int MAX = 100;
+    // Array de Piezas
     private Pieza[] piezas;
     // Contador de piezas en array (coincidirá con la primera posición libre del array)
     private int contador = 0;
@@ -112,11 +112,11 @@ public class ListaPiezas {
 	public static void main(String[] args) {
 		//Creo tres piezas, mi lista, las añado y las imprimo
 		Pieza p1 = new Pieza("Broca dim 6mm", 21);
-	    Pieza p2 = new Pieza("Bateria", 165);
-	    Pieza p3 = new Pieza("Correa ventilador", 63.98);
-	    ListaPiezas miLista = new ListaPiezas();
-	    miLista.insertar(p1);
-	    miLista.insertar(p2);
+		Pieza p2 = new Pieza("Bateria", 165);
+		Pieza p3 = new Pieza("Correa ventilador", 63.98);
+		ListaPiezas miLista = new ListaPiezas();
+		miLista.insertar(p1);
+		miLista.insertar(p2);
 	    
 	    //Puedo probar haciendo la lista más pequeña para ver si llena funciona
 	    if (miLista.insertar(p3) == false) {
