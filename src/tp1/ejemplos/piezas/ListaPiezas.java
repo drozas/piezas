@@ -109,47 +109,47 @@ public class ListaPiezas {
         return cad;
     }
 
-	public static void main(String[] args) {
-	    //Creo tres piezas, mi lista, las añado y las imprimo
-	    Pieza p1 = new Pieza("Broca dim 6mm", 21);
-	    Pieza p2 = new Pieza("Bateria", 165);
-	    Pieza p3 = new Pieza("Correa ventilador", 63.98);
-	    ListaPiezas miLista = new ListaPiezas();
-	    miLista.insertar(p1);
-	    miLista.insertar(p2);
+    public static void main(String[] args) {
+        //Creo tres piezas, mi lista, las añado y las imprimo
+	Pieza p1 = new Pieza("Broca dim 6mm", 21);
+	Pieza p2 = new Pieza("Bateria", 165);
+	Pieza p3 = new Pieza("Correa ventilador", 63.98);
+	ListaPiezas miLista = new ListaPiezas();
+	miLista.insertar(p1);
+	miLista.insertar(p2);
 	    
-	    //Puedo probar haciendo la lista más pequeña para ver si llena funciona
-	    if (miLista.insertar(p3) == false) {
-	    	System.out.println("En esta prueba puse MAX a 2 y no se pudo insertar la tercera pieza");
-	    }
-	    
-	    System.out.println(miLista);
-	    
-	    //Recupero la pieza 0, le cambio el precio y la muestro
-	    Pieza p = miLista.get(0);
-	    p.setCoste(4.1);
-	    System.out.println("Pieza 0 ahora vale " + p.getCoste());
-	    
-	    //Intento borrar la pieza en la posición 3 (devolverá false)
-	    if (miLista.borrar(3)) {
-	    	System.out.println("Borré la pieza en 3");
-	    }else {
-	    	System.out.println("No existía pieza en la posición 3 que intenté borrar");
-	    }
-	    
-	    //Intento borrar la pieza en la posición 1 (devolverá true)
-	    if (miLista.borrar(0)) {
-	    	System.out.println("Borré la pieza en 0");
-	    }
-	    
-	    //Muestro de nuevo mi lista
-	    System.out.println(miLista);
-	    
-	    //Añado una nueva pieza
-	    Pieza nuevaPieza = new Pieza("Bombilla 10W", 9.80);
-	    miLista.insertar(nuevaPieza);
-	    
-	    //Muestro de nuevo mi lista
-	    System.out.println(miLista); 	    
+	//Puedo probar haciendo la lista más pequeña para ver si llena funciona
+	if (miLista.insertar(p3) == false) {
+		System.out.println("En esta prueba puse MAX a 2 y no se pudo insertar la tercera pieza");
 	}
+	    
+	System.out.println(miLista);
+	    
+	//Recupero la pieza 0, le cambio el precio y la muestro
+	Pieza p = miLista.get(0);
+	p.setCoste(4.1);
+	System.out.println("Pieza 0 ahora vale " + p.getCoste());
+	   
+	//Intento borrar la pieza en la posición 3 (devolverá false)
+	if (miLista.borrar(3)) {
+		System.out.println("Borré la pieza en 3");
+	}else {
+	    	System.out.println("No existía pieza en la posición 3 que intenté borrar");
+	}
+	    
+	//Intento borrar la pieza en la posición 1 (devolverá true)
+	if (miLista.borrar(0)) {
+		System.out.println("Borré la pieza en 0");
+	}
+	    
+	//Muestro de nuevo mi lista
+	System.out.println(miLista);
+	    
+	//Añado una nueva pieza
+	Pieza nuevaPieza = new Pieza("Bombilla 10W", 9.80);
+	miLista.insertar(nuevaPieza);
+	    
+	//Muestro de nuevo mi lista
+	System.out.println(miLista); 	    
+    }
 }
