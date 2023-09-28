@@ -48,7 +48,7 @@ public class Pieza {
 	}
 	
 	/**
-	 * Asigna un coste a la piez
+	 * Asigna un coste a la pieza
 	 * @param coste coste de la pieza
 	 */
 	public void setCoste(double coste) {
