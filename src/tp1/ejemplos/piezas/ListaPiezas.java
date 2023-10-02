@@ -23,20 +23,6 @@ public class ListaPiezas {
         this.piezas = new Pieza[MAX];
     }
 
-	// Número máximo de Piezas
-	private final static int MAX = 100;
-	// Array de Piezas
-	private Pieza[] piezas;
-	// Contador de piezas en array (coincidirá con la primera posición libre del array)
-	private int contador = 0;
-
-	/**
-	 * Crea un objeto de tipo lista de Piezas con un array de tamaño MAX
-	 */
-	public ListaPiezas() {
-		this.piezas = new Pieza[MAX];
-	}
-
 	/**
 	 * Comprueba si la lista está llena
 	 * @return true si ya está llena, false en caso contrario
